@@ -154,3 +154,61 @@
 # for caractere in string:
 #     contagem[caractere] = contagem.get(caractere, 0) + 1
 # print(contagem)
+
+
+# 16. Escreva uma função que receba uma lista de números e retorne a soma de todos os números.
+
+# def soma_lista(numeros : list):
+#     return sum(numeros)
+
+# lista = [1,2,3,5]
+
+# print(soma_lista(lista))
+
+
+# 17. Crie uma função que receba um número como argumento e retorne True se o número for primo e False caso contrário.
+
+# def numeros_primos(n):
+#     if n <= 1:
+#         return False
+#     for i in range(2, int(n**0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
+
+# print(numeros_primos(20))  
+
+
+# 18. Desenvolva uma função que receba uma string como argumento e retorne essa string revertida.
+
+# def string_invertida(s : str):
+#     return s[::-1]
+
+# string = "Será que funciona?"
+
+# print(string_invertida(string))
+
+
+# 19. Implemente uma função que receba dois argumentos: uma lista de números e um número. A função deve retornar 
+# todas as combinações de pares na lista que somem ao número dado.
+
+# def encontrar_pares(lista, numero):
+#     pares = []
+#     for i in range(len(lista)):
+#         for j in range(i + 1, len(lista)):
+#             if lista[i] + lista[j] == numero:
+#                 pares.append((lista[i], lista[j]))
+#     return pares
+
+# lista = [1, 2, 3, 4, 5, 6]
+# numero = 7
+# print(encontrar_pares(lista, numero))
+
+
+# 20. Escreva uma função que receba um dicionário e retorne uma lista de chaves ordenadas
+
+# def chaves_ordenadas(dicionario):
+#     return sorted(dicionario.keys())
+
+# dicionario = {"c": 3, "a": 1, "b": 2}
+# print(chaves_ordenadas(dicionario))
